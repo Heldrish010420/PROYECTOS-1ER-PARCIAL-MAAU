@@ -1,0 +1,24 @@
+
+//Heldrish Hansell hernandez Zempoalteca 4°B MAAU UNIVERSIDAD TECNOLOGICA DE TLAXCALA//
+#include <stdio.h>
+#include <stdlib.h> //bibliotecas empleadas para el progama//
+
+float main()
+{
+    float Vs,R1,R2,R3;//Variables de nuestro programa de origen flotante
+    printf("\nEste programa se hizo para conocer la resistencia necesaria utilizada \nen un circuito electrico segun la fuente de voltaje y el led implementado\n ");
+        printf("\nDame el valor del voltaje de tu circuito \n"); // se pide el valor del voltaje
+        scanf("%f",& Vs);//se almacena en la variable Vs
+
+        R1=(Vs-2.8)/0.02; //la resistencia necesaria para el led blanco
+        R2=(Vs-1.5)/0.015;//la resistencia necesaria para el led rojo
+        R3=(Vs-3)/0.02;//la resistencia necesaria para el led azul
+
+        //se realizan las operaciones necesarias para obtener el valor de la resistencia segun el led
+        printf("\nla resistencia empleada para un circuito que cuenta con un led Blanco es: %.2f \n",R1);
+        printf("\nla resistencia empleada para un circuito que cuenta con un led rojo STD es: %.2f \n",R2);
+        printf("\nla resistencia empleada para un circuito que cuenta con un led azul brillante es: %.2f \n",R3);
+        //se imprime el resultado de las operaciones que corresponden a uno de los 3 leds
+
+    return 0;
+}
