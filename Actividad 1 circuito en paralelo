@@ -1,0 +1,26 @@
+//Heldrish Hansell Hernandez Zempoalteca 4°B MAAU Universidad Tecnologica de Tlaxcala
+//26/09/2020 Actividad 1
+#include <stdio.h> //bibliotecas empleadas
+#include <stdlib.h>
+
+int main()
+{
+    float R1, R2, R3; // nuestras variables de entrada de origen flotante
+float  Voltaje,RT,I1,I2,I3,IT;
+    printf("\nEscribe el voltaje de tu circuito electrico;\n"); //obtencion de los valores  de nuestra variables
+    scanf("%f",&Voltaje);//se guardan respectivamente en cada uno
+    printf("\nescribe el valor de R1,R2,R3 separadas por coma:\n");
+    scanf("%f,%f,%f",&R1,&R2,&R3);
+    RT=(1/R1)+(1/R2)+(1/R3);// operacion necesaria para obtener la resistencia total
+    printf("\nla resistencia total es: %.3f\n",RT); // se imprime en pantalla el resultado
+    I1=Voltaje/R1; //operacion para la corriente 1
+    printf("\nla corriente 1 es igual a: %.3f\n",I1);// se imprime en pantalla el resultado de la corriente 1
+    I2=Voltaje/R2;//operacion para la corriente 2
+    printf("\nla corriente 2 es igual a: %.3f\n",I2);//se imprime en pantalla el resultado de la corriente 2
+    I3=Voltaje/R3;//operacion para la corriente 3
+    printf("\nla corriente 3 es igual a: %.3f\n" ,I3);//se imprime en pantalla el resultado de la corriente 3
+    IT=I3+I2+I1; //obtencion de la corriente total del circuito
+    RT=(1/R1)+(1/R2)+(1/R3);
+    printf("\nla corriente total del circuito electrico es: %.3f\n  ",IT); //se muestra en pantalla el valor de  I total
+    return 0;
+}
