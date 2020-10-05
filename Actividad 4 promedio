@@ -1,0 +1,67 @@
+//Heldrish Hansell Hernandez Zempoalteca
+//TSU en Mecatronica
+//Universidad Tecnologica de Tlaxcala
+//actividad 4 promedio de 3 calificaciones.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>//SE DECLARAN LAS BIBLIOTECAS
+int main()
+{
+   char C1,C2,C3;//SE DECLARA LA VARIABLE DE NATURALEZA CHAR
+   int cal1,cal2,cal3;//SE DECLARA LA VARIABLE DE NATURALEZA ENTERA
+   float promed;//SE DECLARA LA VARIABLE DE NATURALEZA FLOTANTE
+
+   printf("Dame tus calificaciones para saber tu 1ra calificacion :\n");//SE PIDE EN PANTALLA EL VALOR DE LA CAL.1
+   scanf("%c",&C1);//SE GUARDA EN LA VARIABLE DE ORIGEN CHAR EL VALOR
+
+   printf("Dame tus calificaciones para saber tu 2ra calificacion :\n");//SE PIDE EN PANTALLA EL VALOR DE LA CAL.2
+   scanf("%c",&C2);//SE GUARDA EN LA VARIABLE DE ORIGEN CHAR EL VALOR
+
+   printf("Dame tus calificaciones para saber tu 3ra calificacion :\n");//SE PIDE EN PANTALLA EL VALOR DE LA CAL.3
+   scanf("%c",&C3);//SE GUARDA EN LA VARIABLE DE ORIGEN CHAR EL VALOR
+
+   if(C1=='A'||C1=='a')//SE DECALRA LOS VALORES DE LA CALIFICACION 2
+   cal1=10;
+   else if(C1=='B'||C1=='b')
+   cal1=9;
+   else if(C1=='C'||C1=='c')
+   cal1=8;
+   else if(C1=='D'||C1=='d')
+   cal1=7;
+   else if(C1=='E'||C1=='e')
+   cal1=6;
+   else if(C1=='F'||C1=='f')
+   cal1=5;
+
+   if(C2=='A'||C2=='a')//SE DECALRA LOS VALORES DE LA CALIFICACION 2
+   {cal2=10;}
+   else if(C2=='B'||C2=='b')
+   {cal2=9;}
+
+   else if(C2=='C'||C2=='c')
+   {cal2=8;}
+   else if(C2=='D'||C2=='d')
+   {cal2=7;}
+   else if(C2=='E'||C2=='e')
+   {cal2=6;}
+   else if(C2=='F'||C2=='f')
+   {cal2=5;}
+
+   if(C3=='A'||C3=='a')//SE DECALRA LOS VALORES DE LA CALIFICACION 3
+   {cal3=10;}
+   else if(C3=='B'||C3=='b')
+   {cal3=9;}
+   else if(C3=='C'||C3=='c')
+   {cal3=8;}
+   else if(C3=='D'||C3=='d')
+   {cal3=7;}
+   else if(C3=='E'||C3=='e')
+   {cal3=6;}
+   else if(C3=='F'||C3=='f')
+   {cal3=5;}
+
+ promed=(cal1+cal2+cal3)/3;//SE REALIZA LA OPERACION NECESARIA PARA SABER EL PORMEDIO
+ printf("tu promedio final es de %.3f",&promed);
+
+ return 0;
+}
