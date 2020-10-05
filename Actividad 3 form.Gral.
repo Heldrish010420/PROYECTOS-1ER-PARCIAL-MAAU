@@ -1,0 +1,29 @@
+//Heldrish Hansell Hernandez Zempoalteca
+//TSU en Mecatronica
+//Universidad Tecnologica de Tlaxcala
+//actividad 3 formula gral.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int a,b,c;//decalracion de variables 
+    int X1,X2;
+
+    printf("INGRESA EL 1er TERMINO DE TU TRINOMIO CUADRADO PERFECTO");//primer termino del trinomio 
+    scanf("%d",&a);//se almacena en lA VARIABLE CORRESPONDIENTE 
+
+    printf("INGRESA EL 2do TERMINO DE TU TRINOMIO CUADRADO PERFECTO");//segundo termino del trinomio 
+    scanf("%d",&b);//se almacena en lA VARIABLE CORRESPONDIENTE 
+    fflush(stdin);
+    printf("INGRESA EL 3er TERMINO DE TU TRINOMIO CUADRADO PERFECTO");//tercer termino del trinomio 
+    scanf("%d",&c);//se almacena en lA VARIABLE CORRESPONDIENTE 
+    fflush(stdin);
+
+    X1=(-b+sqrt(pow(b,2)-(4*a*c)))/(2*a);//SE DETERMINA EL VALOR DE X1 APARTIR DE LOS DATOS ALMACENADOS EN NUESTRAS VARIABLES 
+    X2=(-b-sqrt(pow(b,2)-(4*a*c)))/(2*a);//SE DETERMINA EL VALOR DE X1 APARTIR DE LOS DATOS ALMACENADOS EN NUESTRAS VARIABLES
+
+    printf("EL VALOR DE X1 ES: %d",X1);//SE IMPRIME EL VALOR DE X1
+    printf("EL VALOR DE X1 ES: %d",X2);//SE IMPRIME EL VALOR DE X2
+}
